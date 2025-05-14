@@ -18,17 +18,20 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <script defer src="./js/script.js"></script>
+    <link rel="icon" href="./images/favicon.png" />
     <title>Welcome to Tutor</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar-flex container">
-        <img src="images/logo.svg" alt="Tutor logo" />
+        <a href="/" aria-label="Logo Home Link">
+          <img src="images/logo.svg" alt="Tutor logo" />
+        </a>
         <!-- Main Menu -->
         <div class="main-menu-items">
           <ul class="main-menu-list">
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="#chapters">Chapters</a>
@@ -46,12 +49,18 @@
               <a href="./contact.html">Contact</a>
             </li>
             <li>
-              <a href="https://www.facebook.com" target="_blank"
+              <a
+                href="https://www.facebook.com"
+                aria-label="Follow us on facebook"
+                target="_blank"
                 ><i class="fa-brands fa-facebook"></i
               ></a>
             </li>
             <li>
-              <a href="https://www.twitter.com" target="_blank"
+              <a
+                href="https://www.twitter.com"
+                aria-label="Follow us on twitter"
+                target="_blank"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </li>
@@ -59,13 +68,20 @@
         </div>
         <!-- Mobile Menu -->
         <div class="mobile-menu">
-          <div class="mobile-menu-toggle">
+          <div
+            class="mobile-menu-toggle"
+            role="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu-items"
+            aria-label="open mobile menu"
+            tabindex="0"
+          >
             <i class="fas fa-bars fa-2x"></i>
           </div>
-          <div class="mobile-menu-items">
+          <div class="mobile-menu-items" id="mobile-menu-items">
             <ul class="mobile-menu-list">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="#chapters">Chapters</a>
@@ -83,12 +99,18 @@
                 <a href="./contact.html">Contact</a>
               </li>
               <li>
-                <a href="https://www.facebook.com" target="_blank"
+                <a
+                  href="https://www.facebook.com"
+                  aria-label="Follow us on facebook"
+                  target="_blank"
                   ><i class="fa-brands fa-facebook"></i
                 ></a>
               </li>
               <li>
-                <a href="https://www.twitter.com" target="_blank"
+                <a
+                  href="https://www.twitter.com"
+                  aria-label="Follow us on twitter"
+                  target="_blank"
                   ><i class="fa-brands fa-twitter"></i
                 ></a>
               </li>
@@ -487,5 +509,118 @@
         </div>
       </div>
     </section>
+
+    <!-- Stats -->
+
+    <section class="stats section" id="stats">
+      <div class="container stats-flex">
+        <img src="images/stats.png" alt="stats" />
+        <div class="stats-content">
+          <div class="stats-numbers">
+            <div>
+              <h3 aria-labelledby="stats-happy-users">2000+</h3>
+              <p id="stats-happy-users">Happy Users</p>
+            </div>
+            <div>
+              <h3 id="stats-issues-solved">358</h3>
+              <p id="stats-issues-solved">Issues Solved</p>
+            </div>
+            <div>
+              <h3 id="stats-good-reviews">980</h3>
+              <p id="stats-good-reviews">Good Reviews</p>
+            </div>
+            <div>
+              <h3 id="stats-case-studies">216</h3>
+              <p id="stats-case-studies">Case Studies</p>
+            </div>
+          </div>
+          <p class="stats-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+            quia nihil nobis corrupti deserunt vitae excepturi quas ducimus,
+            facere porro.
+          </p>
+          <a href="#" class="btn">Get the Course</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="newsletter section" id="newsletter">
+      <div class="container newsletter-flex">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          distinctio veniam enim aliquid doloremque tempore?
+        </p>
+        <form>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="social section">
+      <div class="container">
+        <p>Follow us on social media for updates and news about our courses.</p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            aria-label="Follow us on facebook"
+            ><i class="fa-brands fa-facebook fa-2x"></i
+          ></a>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            aria-label="Follow us on twitter"
+            ><i class="fa-brands fa-twitter fa-2x"></i
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            aria-label="Follow us on instagram"
+            ><i class="fa-brands fa-instagram fa-2x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            aria-label="Follow us on linkedin"
+            ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            aria-label="Follow us on youtube"
+            ><i class="fa-brands fa-youtube fa-2x"></i
+          ></a>
+          <a
+            href="https://www.pinterest.com"
+            target="_blank"
+            aria-label="Follow us on pinterest"
+            ><i class="fa-brands fa-pinterest fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-flex">
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2024 - 2025 Tutor. All rights reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
